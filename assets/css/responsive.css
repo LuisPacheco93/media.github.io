@@ -1,0 +1,81 @@
+@media (min-width: 576px) {
+    .layout {
+        grid-template-columns: 0.5fr repeat(3, 1fr);
+        grid-template-rows: 70px 80px 1fr 100px;
+        grid-template-areas:
+            "header navigation navigation navigation"
+            "header  cards cards cards"
+            "header  cards  cards cards"
+            "footer cards cards cards";
+
+    }
+
+    #header {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 0px;
+        border: none;
+    }
+
+    #header .logo{
+        margin-top: 10px;
+    }
+    .logo i {
+    
+         margin-left: 0px;
+   
+    }
+    .cartitas {
+        display: flex;
+        flex-direction: row;
+        height: 590px;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-wrap: normal;
+    overflow-y: scroll;
+    }
+
+    
+
+    .card {
+        width: 23%;
+        height: 315px;
+        display: flex;
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+    .nav{
+        margin-left: -25px;
+    }
+    img {
+        height: 190px;
+    }
+
+    .nav i {
+        opacity: 0;
+    }
+
+
+    .primeralista {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    .primeralista li {
+        margin: 15px;
+    }
+   
+
+
+    ul:hover {
+        transform: none;
+    }
+
+
+
+}
